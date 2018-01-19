@@ -1,0 +1,27 @@
+{
+  "name": "repeat-until-success",
+  "version": "0.1.0-alpha1",
+  "description": "Simple function to repeat a promised task until it succeeds. ",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9fv/node-repeat-until-success.git"
+  },
+  "keywords": [
+    "task",
+    "promise",
+    "repeat",
+    "until",
+    "success",
+    "fail"
+  ],
+  "author": "9 Février <contact@9fevrier.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/9fv/node-repeat-until-success/issues"
+  },
+  "homepage": "https://github.com/9fv/node-repeat-until-success#readme"
+}
