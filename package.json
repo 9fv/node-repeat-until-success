@@ -23,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/9fv/node-repeat-until-success/issues"
   },
-  "homepage": "https://github.com/9fv/node-repeat-until-success#readme"
+  "homepage": "https://github.com/9fv/node-repeat-until-success#readme",
+  "devDependencies": {
+    "mocha": "^5.0.0",
+    "should": "^13.2.1"
+  },
+  "dependencies": {
+    "any-promise": "^1.3.0"
+  }
 }
