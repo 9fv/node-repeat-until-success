@@ -1,0 +1,38 @@
+{
+  "npm": {
+
+  },
+  "github": {
+    "USER_NAME": "9fv",
+    "REPO_NAME": "node-repeat-until-success"
+  },
+  "sources": {
+    "path": "lib/",
+    "pattern": "**/*.js"
+  },
+  "tests": {
+    "path": "test/",
+    "pattern": "**/*.test.js",
+    "eslint": {
+      "options": {
+        "extends": "airbnb",
+        "plugins": [
+          "mocha"
+        ],
+        "rules": {
+          "mocha/no-exclusive-tests": "error"
+        }
+      }
+    }
+  },
+  "templates": {
+    "path": ".templates",
+    "pattern": "**/*.mustache"
+  },
+  "gulp": {
+    "tasks": {
+      "path": ".gulp/tasks",
+      "pattern": "**/*.js"
+    }
+  }
+}
