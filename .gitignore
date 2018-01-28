@@ -57,3 +57,10 @@ typings/
 # dotenv environment variables file
 .env
 
+# Idea/Webstorm/PyCharm files
+*.iml
+.idea/
+
+# Build directory
+.build/
+

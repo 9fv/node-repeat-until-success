@@ -1,11 +1,21 @@
 {
   "name": "repeat-until-success",
   "version": "0.1.0-alpha1",
-  "description": "Simple function to repeat a promised task until it succeeds. ",
-  "main": "src/index.js",
+  "description": "Repeat a task until it succeeds.",
+  "main": "src/repeat-until-success.js",
   "scripts": {
-    "test": "npm test"
+    "test": "nyc mocha",
+    "lint": "node ./node_modules/gulp/bin/gulp.js lint",
+    "docs": "node ./node_modules/gulp/bin/gulp.js docs",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
+  "pre-commit": [
+    "precommit-msg",
+    "lint",
+    "test",
+    "coverage"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/9fv/node-repeat-until-success.git"
@@ -25,10 +35,37 @@
   },
   "homepage": "https://github.com/9fv/node-repeat-until-success#readme",
   "devDependencies": {
+    "bunyan": "^1.8.12",
+    "coveralls": "^3.0.0",
+    "current-git-branch": "^1.0.1",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-react": "^7.5.1",
+    "fs-then-native": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^4.0.1",
+    "gulp-istanbul": "^1.1.3",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-mocha": "^5.0.0",
+    "gulp-mustache": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "isparta": "^4.0.0",
+    "jsdoc-to-markdown": "^4.0.1",
     "mocha": "^5.0.0",
+    "nyc": "^11.4.1",
+    "pre-commit": "^1.2.2",
+    "require-dir": "^0.3.2",
     "should": "^13.2.1"
   },
   "dependencies": {
-    "any-promise": "^1.3.0"
+    "any-promise": "^1.3.0",
+    "is-logger": "^0.1.0",
+    "is-promise": "^2.1.0",
+    "lodash": "^4.17.4"
   }
 }
