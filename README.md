@@ -22,7 +22,6 @@
 [greenkeeper-badge-url]: https://greenkeeper.io/
 
 
-
 node-repeat-until-success
 =========================
 
