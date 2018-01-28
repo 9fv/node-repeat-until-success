@@ -2,7 +2,7 @@
   "name": "repeat-until-success",
   "version": "0.1.0-alpha1",
   "description": "Repeat a task until it succeeds.",
-  "main": "src/repeat-until-success.js",
+  "main": "lib/repeat-until-success.js",
   "scripts": {
     "test": "nyc mocha",
     "lint": "node ./node_modules/gulp/bin/gulp.js lint",
