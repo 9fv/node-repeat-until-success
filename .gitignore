@@ -64,3 +64,6 @@ typings/
 # Build directory
 .build/
 
+# Coveralls
+.coveralls.yml
+
