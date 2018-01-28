@@ -63,22 +63,11 @@ Repeat a task until it succeeds.
 ```javascript
    const repeatUntilSuccess = require('repeat-until-success');
 
-   function
+   function fn() {
+     return Promise.resolve();
+   }
 
-   const isLogger = require('is-logger');
-   const bunyan = require('bunyan');
-
-   const LOG = bunyan.createLogger({name: __filename});
-   const FAKE_LOG = {name: 'I am a fake logger!'};
-
-   console.log(isLogger(LOG))
-   # >>> return true: LOG is a logger.
-
-   console.log(isLogger(FAKE_LOG);
-   # >>> return false: FAKE_LOG is not a logger.
-
-   console.log(isLogger(FAKE_LOG, {throwOnFalse: true});
-   # >>> throw an error of type `IsNotLoggerError`: FAKE_LOG is not a logger.
+   repeatUntilSuccess(fn);
 
 ```
 
