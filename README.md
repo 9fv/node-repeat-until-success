@@ -2,12 +2,12 @@
 [npm-badge-url]: https://www.npmjs.com/package/repeat-until-success
 [npm-downloads-badge]: https://img.shields.io/npm/dt/repeat-until-success.svg
 [npm-downloads-url]: https://npmjs.org/package/repeat-until-success
-[travis-badge]: https://img.shields.io/travis/9fv/node-repeat-until-success/v0.1.0.svg?label=TravisCI
+[travis-badge]: https://img.shields.io/travis/9fv/node-repeat-until-success/master.svg?label=TravisCI
 [travis-badge-url]: https://travis-ci.org/9fv/node-repeat-until-success
-[circle-badge]: https://circleci.com/gh/9fv/node-repeat-until-success/tree/v0.1.0.svg?style=svg&circle-token=
-[circle-badge-url]: https://circleci.com/gh/9fv/node-repeat-until-success/tree/v0.1.0
-[coveralls-badge]: https://coveralls.io/repos/github/9fv/node-repeat-until-success/badge.svg?branch=v0.1.0
-[coveralls-badge-url]: https://coveralls.io/github/9fv/node-repeat-until-success?branch=v0.1.0
+[circle-badge]: https://circleci.com/gh/9fv/node-repeat-until-success/tree/master.svg?style=svg&circle-token=
+[circle-badge-url]: https://circleci.com/gh/9fv/node-repeat-until-success/tree/master
+[coveralls-badge]: https://coveralls.io/repos/github/9fv/node-repeat-until-success/badge.svg?branch=master
+[coveralls-badge-url]: https://coveralls.io/github/9fv/node-repeat-until-success?branch=master
 [codeclimate-badge]: https://img.shields.io/codeclimate/github/9fv/node-repeat-until-success.svg
 [codeclimate-badge-url]: https://codeclimate.com/github/9fv/node-repeat-until-success
 [ember-observer-badge]: http://emberobserver.com/badges/node-repeat-until-success.svg
