@@ -2,12 +2,12 @@
 [npm-badge-url]: https://www.npmjs.com/package/repeat-until-success
 [npm-downloads-badge]: https://img.shields.io/npm/dt/repeat-until-success.svg
 [npm-downloads-url]: https://npmjs.org/package/repeat-until-success
-[travis-badge]: https://img.shields.io/travis/9fv/node-repeat-until-success/v0.1.0-beta2.svg?label=TravisCI
+[travis-badge]: https://img.shields.io/travis/9fv/node-repeat-until-success/v0.1.0.svg?label=TravisCI
 [travis-badge-url]: https://travis-ci.org/9fv/node-repeat-until-success
-[circle-badge]: https://circleci.com/gh/9fv/node-repeat-until-success/tree/v0.1.0-beta2.svg?style=svg&circle-token=
-[circle-badge-url]: https://circleci.com/gh/9fv/node-repeat-until-success/tree/v0.1.0-beta2
-[coveralls-badge]: https://coveralls.io/repos/github/9fv/node-repeat-until-success/badge.svg?branch=v0.1.0-beta2
-[coveralls-badge-url]: https://coveralls.io/github/9fv/node-repeat-until-success?branch=v0.1.0-beta2
+[circle-badge]: https://circleci.com/gh/9fv/node-repeat-until-success/tree/v0.1.0.svg?style=svg&circle-token=
+[circle-badge-url]: https://circleci.com/gh/9fv/node-repeat-until-success/tree/v0.1.0
+[coveralls-badge]: https://coveralls.io/repos/github/9fv/node-repeat-until-success/badge.svg?branch=v0.1.0
+[coveralls-badge-url]: https://coveralls.io/github/9fv/node-repeat-until-success?branch=v0.1.0
 [codeclimate-badge]: https://img.shields.io/codeclimate/github/9fv/node-repeat-until-success.svg
 [codeclimate-badge-url]: https://codeclimate.com/github/9fv/node-repeat-until-success
 [ember-observer-badge]: http://emberobserver.com/badges/node-repeat-until-success.svg
@@ -123,9 +123,13 @@ Please refer to project's style guidelines and guidelines for submitting patches
 
 ## <a name="credits"> Credits
 
-Inspired by the [Stackoverflow answer](https://stackoverflow.com/a/26694802) of [Benjamin Gruenbaum](https://stackoverflow.com/users/1348195/benjamin-gruenbaum).
+* Inspired by the [Stackoverflow answer](https://stackoverflow.com/a/26694802) of [Benjamin Gruenbaum](https://stackoverflow.com/users/1348195/benjamin-gruenbaum). It is thanks to him that this project exists.
 
 ## <a name="history"> History
+
+### v0.1.0 (2018-01-29)
+
+* Add unit tests and improve code coverage.
 
 ### v0.1.0-beta2 (2018-01-29)
 

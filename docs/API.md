@@ -68,9 +68,9 @@ Set a delay between each runnning (expressed in milliseconds).
 
 **Kind**: instance method of [<code>RepeatTaskUntilSuccess</code>](#RepeatTaskUntilSuccess)  
 
-| Param |
-| --- |
-| delay | 
+| Param | Type | Description |
+| --- | --- | --- |
+| delay | <code>number</code> | The delay (in milliseconds). |
 
 <a name="RepeatTaskUntilSuccess+timeout"></a>
 
@@ -79,9 +79,9 @@ Set a timeout after which the process stops (expressed in milliseconds).
 
 **Kind**: instance method of [<code>RepeatTaskUntilSuccess</code>](#RepeatTaskUntilSuccess)  
 
-| Param |
-| --- |
-| timeout | 
+| Param | Type | Description |
+| --- | --- | --- |
+| timeout | <code>number</code> | The timeout (in milliseconds). |
 
 <a name="RepeatTaskUntilSuccess+run"></a>
 
