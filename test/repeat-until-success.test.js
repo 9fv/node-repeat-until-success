@@ -51,6 +51,12 @@ describe('Base unit testing for [Function=repeatUntilSuccess]', () => {
     }).should.throw('Function must be a promise');
   });
 
+  it('should return an instance of {RepeatTaskUntilSuccess} if delay is a valid integer', () => {
+    (() => {
+      repeatUntilSuccess(this.simpleFn, args=[2]).delay(500);
+    }).should.throw('Delay must be an integer');
+  });
+
   it('should throw an error if delay is not an integer', () => {
     (() => {
       repeatUntilSuccess(this.simpleFn, args=[2]).delay('string');
