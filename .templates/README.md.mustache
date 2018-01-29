@@ -62,11 +62,18 @@ Repeat a task until it succeeds.
 ```javascript
    const repeatUntilSuccess = require('repeat-until-success');
 
-   function fn() {
-     return Promise.resolve();
-   }
+   function task() {
+      setTimeout(() => {
+        this.i += 1;
+      }, 1000);
+      if (this.i < 5) {
+        return Promise.reject('Task is not finished!');
+      } else {
+        return Promise.resolve('Task is finished!');
+     }
+   });
 
-   repeatUntilSuccess(fn);
+   repeatUntilSuccess(task, null, 100);
 
 ```
 
