@@ -62,11 +62,18 @@ Repeat a task until it succeeds.
 ```javascript
    const repeatUntilSuccess = require('repeat-until-success');
 
-   function fn() {
-     return Promise.resolve();
-   }
+   function task() {
+      setTimeout(() => {
+        this.i += 1;
+      }, 1000);
+      if (this.i < 5) {
+        return Promise.reject('Task is not finished!');
+      } else {
+        return Promise.resolve('Task is finished!');
+     }
+   });
 
-   repeatUntilSuccess(fn);
+   repeatUntilSuccess(task, null, 100);
 
 ```
 
@@ -116,7 +123,9 @@ Inspired by the [Stackoverflow answer](https://stackoverflow.com/a/26694802) of 
 
 ## <a name="history"> History
 
-### v0.1.0-alpha1 (2018-01-24)
+### v0.1.0-alpha1 (2018-01-29)
+
+### v0.1.0-alpha1 (2018-01-28)
 
 Initial version.
 
