@@ -2,12 +2,12 @@
 [npm-badge-url]: https://www.npmjs.com/package/repeat-until-success
 [npm-downloads-badge]: https://img.shields.io/npm/dt/repeat-until-success.svg
 [npm-downloads-url]: https://npmjs.org/package/repeat-until-success
-[travis-badge]: https://img.shields.io/travis/9fv/node-repeat-until-success/0.1.0-beta1.svg?label=TravisCI
+[travis-badge]: https://img.shields.io/travis/9fv/node-repeat-until-success/v0.1.0-beta2.svg?label=TravisCI
 [travis-badge-url]: https://travis-ci.org/9fv/node-repeat-until-success
-[circle-badge]: https://circleci.com/gh/9fv/node-repeat-until-success/tree/0.1.0-beta1.svg?style=svg&circle-token=
-[circle-badge-url]: https://circleci.com/gh/9fv/node-repeat-until-success/tree/0.1.0-beta1
-[coveralls-badge]: https://coveralls.io/repos/github/9fv/node-repeat-until-success/badge.svg?branch=0.1.0-beta1
-[coveralls-badge-url]: https://coveralls.io/github/9fv/node-repeat-until-success?branch=0.1.0-beta1
+[circle-badge]: https://circleci.com/gh/9fv/node-repeat-until-success/tree/v0.1.0-beta2.svg?style=svg&circle-token=
+[circle-badge-url]: https://circleci.com/gh/9fv/node-repeat-until-success/tree/v0.1.0-beta2
+[coveralls-badge]: https://coveralls.io/repos/github/9fv/node-repeat-until-success/badge.svg?branch=v0.1.0-beta2
+[coveralls-badge-url]: https://coveralls.io/github/9fv/node-repeat-until-success?branch=v0.1.0-beta2
 [codeclimate-badge]: https://img.shields.io/codeclimate/github/9fv/node-repeat-until-success.svg
 [codeclimate-badge-url]: https://codeclimate.com/github/9fv/node-repeat-until-success
 [ember-observer-badge]: http://emberobserver.com/badges/node-repeat-until-success.svg
@@ -60,7 +60,7 @@ Repeat a task until it succeeds.
 ## <a name="usage"> Usage
 
 ```javascript
-   const repeatUntilSuccess = require('repeat-until-success');
+   const {repeatUntilSuccess} = require('repeat-until-success');
 
    function task() {
       setTimeout(() => {
@@ -73,7 +73,11 @@ Repeat a task until it succeeds.
      }
    });
 
-   repeatUntilSuccess(task, null, 100);
+   repeatUntilSuccess(task).delay(500).timeout(15000).run().then(() => {
+     console.log('Task is succeed!');
+   }).catch((err) => {
+     console.error('Task is failed!');
+   });
 
 ```
 
@@ -123,7 +127,9 @@ Inspired by the [Stackoverflow answer](https://stackoverflow.com/a/26694802) of 
 
 ## <a name="history"> History
 
-### v0.1.0-alpha1 (2018-01-29)
+### v0.1.0-beta2 (2018-01-29)
+
+Code refactoring for better testability and simplified usage.
 
 ### v0.1.0-alpha1 (2018-01-28)
 

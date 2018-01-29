@@ -60,7 +60,7 @@ Repeat a task until it succeeds.
 ## <a name="usage"> Usage
 
 ```javascript
-   const repeatUntilSuccess = require('repeat-until-success');
+   const {repeatUntilSuccess} = require('repeat-until-success');
 
    function task() {
       setTimeout(() => {
@@ -73,7 +73,11 @@ Repeat a task until it succeeds.
      }
    });
 
-   repeatUntilSuccess(task, null, 100);
+   repeatUntilSuccess(task).delay(500).timeout(15000).run().then(() => {
+     console.log('Task is succeed!');
+   }).catch((err) => {
+     console.error('Task is failed!');
+   });
 
 ```
 
@@ -123,7 +127,9 @@ Inspired by the [Stackoverflow answer](https://stackoverflow.com/a/26694802) of 
 
 ## <a name="history"> History
 
-### v0.1.0-alpha1 (2018-01-29)
+### v0.1.0-beta2 (2018-01-29)
+
+Code refactoring for better testability and simplified usage.
 
 ### v0.1.0-alpha1 (2018-01-28)
 
