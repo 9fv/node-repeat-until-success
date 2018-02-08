@@ -7,7 +7,7 @@
     "test": "nyc mocha",
     "lint": "node ./node_modules/gulp/bin/gulp.js lint",
     "docs": "node ./node_modules/gulp/bin/gulp.js docs",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "coverage": "npm run test && nyc report --reporter=text-lcov | coveralls",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "pre-commit": [
