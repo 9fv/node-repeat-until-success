@@ -7,6 +7,8 @@ Repeat a task until it succeeds.
 
 * [v0.x](#v0.x)
 * [v0.1.x](#v0.1.x)
+  * [v0.1.4](#v0.1.4)
+  * [v0.1.3](#v0.1.3)
   * [v0.1.2](#v0.1.2)
   * [v0.1.0](#v0.1.0)
   * [v0.1.0-beta2](#v0.1.0-beta2)
@@ -16,6 +18,11 @@ Repeat a task until it succeeds.
 ## <a name="v0.x"> v0.x
 
 ### <a name="v0.1.x"> v0.1.x
+
+#### <a name="v0.1.4"> v0.1.4 (2018-02-13)
+
+* Fix bug: [An error should be thrown if the timeout is reached](https://github.com/9fv/node-repeat-until-success/issues/4).
+
 
 #### <a name="v0.1.3"> v0.1.3 (2018-02-13)
 
