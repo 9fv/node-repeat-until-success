@@ -17,6 +17,11 @@ Repeat a task until it succeeds.
 
 ### <a name="v0.1.x"> v0.1.x
 
+#### <a name="v0.1.3"> v0.1.3 (2018-02-13)
+
+* Fix bug: [An error should be thrown if the timeout is reached](https://github.com/9fv/node-repeat-until-success/issues/4).
+
+
 #### <a name="v0.1.2"> v0.1.2 (2018-02-13)
 
 * Externalize CHANGELOG to a specific file.
