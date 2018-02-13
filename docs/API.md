@@ -19,7 +19,7 @@
 ## Functions
 
 <dl>
-<dt><a href="#repeatUntilSuccessFactory">repeatUntilSuccessFactory(fn, delay)</a> ⇒ <code><a href="#RepeatTaskUntilSuccess">RepeatTaskUntilSuccess</a></code></dt>
+<dt><a href="#repeatUntilSuccessFactory">repeatUntilSuccessFactory(task, args)</a> ⇒ <code><a href="#RepeatTaskUntilSuccess">RepeatTaskUntilSuccess</a></code></dt>
 <dd><p>Repeat a promise function until it succeeds.</p>
 </dd>
 </dl>
@@ -97,7 +97,7 @@ A default (very) simple logger based on {console} object.
 **Kind**: global constant  
 <a name="repeatUntilSuccessFactory"></a>
 
-## repeatUntilSuccessFactory(fn, delay) ⇒ [<code>RepeatTaskUntilSuccess</code>](#RepeatTaskUntilSuccess)
+## repeatUntilSuccessFactory(task, args) ⇒ [<code>RepeatTaskUntilSuccess</code>](#RepeatTaskUntilSuccess)
 Repeat a promise function until it succeeds.
 
 **Kind**: global function  
@@ -106,8 +106,8 @@ Repeat a promise function until it succeeds.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| fn | <code>function</code> | The function to repeat. |
-| delay | <code>number</code> | Delay (expressed in milliseconds) between each running. |
+| task | <code>function</code> | The function to repeat. |
+| args | <code>array</code> | Array of arguments passed when calling task. |
 
 
 ## <a name="license"> License
