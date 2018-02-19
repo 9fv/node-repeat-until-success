@@ -7,6 +7,7 @@ Repeat a task until it succeeds.
 
 * [v0.x](#v0.x)
 * [v0.1.x](#v0.1.x)
+  * [v0.1.5](#v0.1.5)
   * [v0.1.4](#v0.1.4)
   * [v0.1.3](#v0.1.3)
   * [v0.1.2](#v0.1.2)
@@ -18,6 +19,11 @@ Repeat a task until it succeeds.
 ## <a name="v0.x"> v0.x
 
 ### <a name="v0.1.x"> v0.1.x
+
+#### <a name="v0.1.5"> v0.1.5 (2018-02-18)
+
+* Fix bug: [Uncaught error TypeError: Cannot read property 'then' of undefined #5](https://github.com/9fv/node-repeat-until-success/issues/5).
+
 
 #### <a name="v0.1.4"> v0.1.4 (2018-02-13)
 
