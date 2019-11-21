@@ -36,7 +36,7 @@
   "homepage": "https://github.com/9fv/node-repeat-until-success#readme",
   "devDependencies": {
     "bunyan": "^1.8.12",
-    "coveralls": "^3.0.0",
+    "coveralls": "^3.0.8",
     "current-git-branch": "^1.0.1",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
