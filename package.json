@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "is-logger": "^0.1.0",
-    "is-promise": "^2.1.0",
+    "is-promise": "^4.0.0",
     "lodash": "^4.17.4"
   }
 }
